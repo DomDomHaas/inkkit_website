@@ -1,0 +1,469 @@
+/* Navigation */ 
+
+/* Overwrite Bootstrap navbar */
+
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner{
+    padding: 0;
+}
+
+.navbar .nav{
+    float: none;
+}
+
+.navbar-inner
+{
+    background-color: #fff;
+    background-image: none;
+}
+
+.navbar .nav > li{
+    display: inline-block;
+    float: none;
+    margin: 0 7% 0 11%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.navicon {
+    width: 35px;
+    height: 35px;
+}
+.navbar .nav > li > a{
+    padding: 10%;
+}
+
+.nav .site_loading{
+    width: 16px;
+}
+
+.nav .site_ready{
+    display: none
+}
+
+.site_loaded,
+.site_loading {
+    position: relative;
+    bottom: 3px;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner
+{ 
+    box-shadow: none
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner{
+    padding: 0;
+}
+
+.navbar .nav{
+    float: none;
+}
+
+.navbar-inner
+{
+    background-color: #fff;
+    background-image: none;
+}
+
+.navbar .nav > li > a{
+    color:#706c6a;
+}
+
+.navbar .nav > li > a:hover{
+    color: #ee7666;
+}
+
+.nav .site_loading{
+    width: 16px;
+}
+
+.nav .site_ready{
+    display: none
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .navbar-fixed-top, .navbar-fixed-bottom{
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .navbar .nav > li{
+        margin: 0 2%;
+    }
+}
+
+/* Swipe.css */ 
+
+.swipe {
+  width: 449px;    
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+.screenshots{
+    position: relative;
+    margin: 5% 0;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.swipe-wrap,
+.swipe-wrap > div > img{
+    height: auto;
+}
+
+.swipe_next {
+    left: 99%;
+}
+
+.swipe_prev{
+    left: -10%;
+}
+
+.swipe_next,
+.swipe_prev{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    height: 27px;
+    width: 33px;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+    color: #ee7666;
+}
+
+.swipe_next:hover,
+.swipe_prev:hover {
+    color: #9dbf95;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    /*
+    .swipe {
+        width: 852px;
+        max-width: 100%;    
+        height: auto;
+    }
+    */
+    
+}
+
+
+@media screen and (max-width: 767px){
+    
+    .swipe {
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 550px){
+
+    .swipe_next{
+        left: 87%;
+    }
+    .swipe_prev{
+        left: 1%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .swipe {
+        max-width: 97%;
+    }
+    
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .swipe-wrap > div {
+      width:100%;
+    }
+
+
+    
+}
+
+
+/* Common */
+html, body {	
+	font-size:15px;
+	font-family:"Quicksand";
+    font-weight: 700;
+	
+    color:#706c6a;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+	margin:0;
+	padding:0;    
+}
+
+@media screen and (max-width: 767px){
+
+    body{
+        font-size: 14px;
+    }
+
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 450px;
+    margin: auto;
+    padding: 0;
+    text-align: center;    
+}
+
+section > h1,
+section > h2,
+section > h3 {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5{
+    color: #ee7666;
+    margin: 0 0 5% 0;
+}
+
+section > i{
+    color: #ee7666;
+    width: 40px;
+}
+
+section {
+    margin: 5% auto 10% auto;
+    padding: 1% 0 1% 0;
+    background-color: #fff;
+}
+
+section.info_version{
+    padding: 2.5% 0 0 0;
+}
+
+section > p{
+    text-align: left;
+    padding: 0 1% 0 1%;
+}
+
+section.whales{
+    background-color: none !important;
+}
+
+section.media > a {
+    color: #ee7666;
+}
+
+section.media {
+    text-align: left;
+}
+
+section.whales > h1,
+section.whales > h2,
+section.whales > h3{
+    text-align: center;
+}
+
+.background_image,
+.background_image img{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.top_loading{
+    opacity: 0;
+}
+
+
+
+
+
+
+/* Section specific */ 
+
+.screenshots {
+    position: relative;
+}
+
+.info_game p,
+.info_version p{
+    font-size: 25px;
+    line-height: 1.25em;
+    font-weight: 700;
+    padding: 0 3.5%;
+}
+
+.info_version p a{
+    color: cyan;
+    text-decoration: none;
+}
+
+.info_version p a:hover{
+    color: cyan;
+    text-decoration: underline;
+}
+
+
+.logo > img{
+    max-width: 350px;
+}
+
+.awards {
+    margin: 5% 0 0 0;
+}
+
+.awards > img{
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 clear;
+    width: 125px;
+    height: 125px;
+}
+
+/*
+.awards > img:hover{
+    box-shadow: 0 0 5px 0 #111;
+}
+*/
+
+
+@media screen and (max-width: 450px){
+    
+    section{
+        padding: 1%;
+    }    
+
+    .awards > img{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+/* footer */
+
+/*
+.footer {
+    display: table;
+    column-count: 8;
+    margin: 3% auto 0;
+    text-align: center;
+    padding: 0;
+    font-weight: 700;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.icon_links a{
+    margin: auto;
+    padding: 20px;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-decoration:none;
+    background-color: #fff;
+    color: #333;
+}
+
+.icon_links a:hover{
+    border: none;
+    background-color: #00b5a9;
+    box-shadow: 0 0 5px 0 white;
+}
+
+
+.contact_email,
+.contact_twitter,
+.contact_music,
+.contact_fb {
+    display: table-cell;
+    padding: 0 0 7.5% 0;
+    margin: 0;
+    width: 9%;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.icon_links {
+    display: table-cell;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.icon_links p {
+    margin: 5% auto;
+}
+
+signup_text > p{
+    margin: 2.5% auto;
+}
+
+.signup > p{
+    margin: 1% auto;
+}
+
+.icon_links > p,
+.signup > p {
+    color: #fff;
+}
+
+.contact_email + div.icon_links p{
+    font-size: 10px;
+}
+
+*/
+
+.whales_logo{
+    margin: 10% auto;
+}
+
+.whales_logo a,
+.whales_logo a:hover{
+    background: none;
+    background-color: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 white;
+}
+
+.whales_logo a img{
+    max-width: 100px;
+}
+
+.whales_logo a img:hover{
+    box-shadow: 0 0 5px 0 white;
+}
+
+
+

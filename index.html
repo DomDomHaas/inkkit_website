@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta property="og:title" content="Ink Kit">
+    <meta property="og:image" content="img/512_ink_kit_logo.png">
+    <meta property="og:description" content="A zurichoise game development studio.">
+        
+    <meta name="author" content="Ink Kit">
+    <meta name="publisher" content="Ink Kit">
+    <meta name="description" content="A zurichoise game development studio.">
+    <meta name="keywords" content="ink, kit, ink kit, abstract, deru, puzzle, game, 2D, coop, multiplayer">
+    <meta name="page-topic" content="Game">
+    <meta name="page-type" content="Software">
+    <meta name="audience" content="Anfänger, Azubis, Fans, Fortgeschrittene, Frauen, Jugendliche, Kinder, Männer, Schüler, Studenten">
+    <meta name="robots" content="index, follow">
+    <meta name="DC.Creator" content="Ink Kit">
+    <meta name="DC.Publisher" content="Ink Kit">
+    <meta name="DC.Rights" content="Ink Kit">
+    <meta name="DC.Description" content="A zurichoise game development studio.">
+    <meta name="DC.Language" content="en">
+        
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <!--
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53733900-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>   
+    <link rel="stylesheet" type="text/css" media="screen" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome-4.7.0/css/font-awesome.css"/-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-responsive.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/min/inkkit.min.css"/>
+    <script src="js/min/inkkit.min.js"></script>
+    
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; width:400px; }
+        #mc_embed_signup_scroll > label{ font-weight: inherit; font-size: 15px; }
+    </style>
+    
+    <title>Ink Kit Studio</title>
+    
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+    
+    
+<body>
+
+    <div class="background_image" style="background-repeat: repeat; background-image: url(img/noisy-100x100-fine.png);">
+    </div>
+    
+    <main id="top" class="container">
+                
+        <div class="navbar navbar-fixed-top">
+          <div class="navbar-inner">
+            <ul class="nav">
+                <li><a href="#top" data-local="#top"><img class="site_loading" src="img/loading.gif" alt="page is loading"/><img class="navicon site_ready" src="img/100_ink_kit_icon.png" alt="favicon" /></a></li>
+                <li><a href="#games" data-local="#deru">GAMES</a></li>
+                <li><a href="/press/" target="_blank">PRESSKIT</a></li>                
+            </ul>
+          </div>
+        </div>
+
+        <section class="logo">
+            <img src="img/512_ink_kit_logo.png" />
+        </section>
+        
+        <section class="about">
+            <h3>STRICTLY FLOWING EVERYWHERE</h3>
+            
+            <p>A zurichoise game development studio.</p>
+            <p>Founded in late 2016 as part of the Mr. Whale's Game Services.</p>
+            <p>Currently working on «DERU - a cooperative puzzle game», a mind twisting puzzle game.</p>
+        </section>        
+
+        <section id="deru" class="deru">
+
+            <h3>DERU</h3>
+
+            <p>DERU brings two players together in a cooperative game experience, in which they solve abstract and complex levels.</p>
+            
+            <div class="screenshots">
+                <div onclick="prevSlider();" class="fa fa-chevron-left fa-2x swipe_prev"></div>
+                <div id="slider" class="swipe">
+                    <div class="swipe-wrap">
+                        <div><img data-picname="schlicht1" /></div>
+                        <div><img data-picname="schlicht4" /></div>
+                        <div><img data-picname="schlicht3" /></div>
+                        <div><img data-picname="schlicht5" /></div>
+                        <div><img data-picname="schlicht10" /></div>
+                    </div>
+                </div>
+                <div onclick="nextSlider();" class="fa fa-chevron-right fa-2x swipe_next"></div>
+                <script src="js/min/swipe_overlay.min.js"></script>
+            </div>
+            
+            <p>With teamwork, timing and tactical placement both players bring color into the world of DERU.</p>
+
+            <a href="http://www.deru.ch"><h3>WWW.DERU.CH</h3></a>
+            
+            <div class="awards">
+                <img data-src="img/deru_award_sgda_b.png" class="lazyload" />
+                <img data-src="img/deru_award_gdc_b.png" class="lazyload" />
+                <img data-src="img/deru_award_pitch_b.png" class="lazyload" />
+                <img data-src="img/deru_award_suisa_b.png" class="lazyload" />
+                <img data-src="img/deru_award_swissnex_b.png" class="lazyload" />
+                <img data-src="img/deru_award_indieprize_b.png" class="lazyload" />                
+                <img data-src="img/deru_award_c4p_b.png" class="lazyload" />
+                <img data-src="img/deru_award_bluebyte_b.png" class="lazyload" />
+                <img data-src="img/deru_award_ludicious_b.png" class="lazyload" />
+            </div>
+            
+        </section>
+        
+        <section class="media">
+            <h3>MEDIA</h3>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//deru.us12.list-manage.com/subscribe/post?u=84b83840aa126c103f385d289&amp;id=f7fc110fb7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_84b83840aa126c103f385d289_f7fc110fb7" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+            
+            <p>Follow us on our channels for more information.</p>
+            
+            <i class="fa fa-2x fa-twitter" aria-hidden="true"></i><a href="https://www.twitter.com/inkkitstudio" target="_blank">INK KIT STUDIO</a>
+            <br/>
+            <br/>
+            <i class="fa fa-2x fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/inkkitstudio" target="_blank">INK KIT STUDIO</a>
+            <br/>
+            <br/>
+            <i class="fa fa-2x fa-envelope" aria-hidden="false"></i><a href="mailto:contact@inkkit.ch" target="_blank">CONTACT INK KIT STUDIO</a>
+            
+        </section>        
+        
+        
+        <h3>Part of</h3>
+
+        <div class="whales_logo">
+            <a href="http://www.misterwhale.ch" target="_blank"><img data-src="img/whales_logo.png" class="lazyload" /></a>
+        </div>        
+
+    </main>
+        
+</body>
+</html>
